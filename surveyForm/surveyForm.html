@@ -1,0 +1,39 @@
+<h1 id="title">Survey larp Form</h1>
+<p id="description">formularz zgłoszeiowy do larpa</p>
+<form id="survey-form">
+  <label for="name" id="name-label"> name *:</label>
+  <input type="text" id="name" required placeholder="imie" />
+  <label for="email" id="email-label"> e-mail *:</label>
+  <input type="email" id="email" required placeholder="e-mail" />
+  <label for="number" id="number-label"> age *:</label>
+  <input
+    type="number"
+    id="number"
+    required
+    placeholder="wiek"
+    min="1"
+    max="110"
+  />
+  <select id="dropdown" class="dropdown">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+  </select>
+  <fieldset>
+    <input id="first" type="radio" name="radio" value="1" />
+    <label for="first">First</label>
+    <input id="second" type="radio" name="radio" value="2" />
+    <label for="second">Second</label>
+    <input id="third" type="radio" name="radio" value="3" />
+    <label for="third">Third</label>
+  </fieldset>
+  <fieldset>
+    <input id="yes" type="checkbox" name="question" value="1" />
+    <label for="yes">Yes</label>
+    <input id="no" type="checkbox" name="question" value="0" />
+    <label for="no">No</label>
+  </fieldset>
+  <p>comment</p>
+  <textarea id="comment" rows="5" placeholder="leave a comment..."></textarea>
+  <button id="submit">submit</button>
+</form>
