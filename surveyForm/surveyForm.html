@@ -1,39 +1,66 @@
-<h1 id="title">Survey larp Form</h1>
-<p id="description">formularz zgłoszeiowy do larpa</p>
+<h1 id="title">Application larp Form</h1>
+<p id="description">If you want to take part in the larp, fill in the form.</p>
 <form id="survey-form">
-  <label for="name" id="name-label"> name *:</label>
-  <input type="text" id="name" required placeholder="imie" />
-  <label for="email" id="email-label"> e-mail *:</label>
-  <input type="email" id="email" required placeholder="e-mail" />
-  <label for="number" id="number-label"> age *:</label>
-  <input
-    type="number"
-    id="number"
-    required
-    placeholder="wiek"
-    min="1"
-    max="110"
-  />
-  <select id="dropdown" class="dropdown">
-    <option>1</option>
-    <option>2</option>
-    <option>3</option>
-  </select>
-  <fieldset>
-    <input id="first" type="radio" name="radio" value="1" />
-    <label for="first">First</label>
-    <input id="second" type="radio" name="radio" value="2" />
-    <label for="second">Second</label>
-    <input id="third" type="radio" name="radio" value="3" />
-    <label for="third">Third</label>
-  </fieldset>
-  <fieldset>
-    <input id="yes" type="checkbox" name="question" value="1" />
-    <label for="yes">Yes</label>
-    <input id="no" type="checkbox" name="question" value="0" />
-    <label for="no">No</label>
-  </fieldset>
-  <p>comment</p>
-  <textarea id="comment" rows="5" placeholder="leave a comment..."></textarea>
-  <button id="submit">submit</button>
+  <div>
+    <label for="name" id="name-label"> * name:</label>
+    <input type="text" id="name" required placeholder="name" />
+    <label for="surname" id="name-label"> * surname:</label>
+    <input type="text" id="surname" required placeholder="surname" />
+    <label for="nick" id="name-label"> nick:</label>
+    <input type="text" id="name" placeholder="nick" />
+    <label for="email" id="email-label"> * e-mail:</label>
+    <input type="email" id="email" required placeholder="e-mail" />
+    <label for="number" id="number-label"> * age:</label>
+    <input
+      type="number"
+      id="number"
+      required
+      placeholder="age"
+      min="1"
+      max="110"
+    />
+    <fieldset>
+      <input id="male" type="radio" required name="sex" value="1" />
+      <label for="male">male</label>
+      <input id="female" type="radio" name="sex" value="2" />
+      <label for="female">female</label>
+      <input id="other" type="radio" name="sex" value="3" />
+      <label for="other">other</label>
+      <label for="sexDescription">What is the gender of your character?</label>
+      <input id="sexDescription" type="text" placeholder="male/female" />
+    </fieldset>
+  </div>
+  <div>
+    <label for="dropdown">which race would you like to play?</label>
+    <select id="dropdown" class="dropdown">
+      <option>man</option>
+      <option>elf</option>
+      <option>dwarf</option>
+      <option>halfing</option>
+      <option>orc</option>
+    </select>
+
+    <fieldset id="preferences">
+      <label for="preferences"
+        >What topics do you expect? You can choose more than one answer.</label
+      >
+      <input id="pref0" type="checkbox" name="question" value="0" />
+      <label for="pref0">fight</label>
+      <input id="pref1" type="checkbox" name="question" value="1" />
+      <label for="pref1">romance</label>
+      <input id="pref2" type="checkbox" name="question" value="2" />
+      <label for="pref2">drama</label>
+      <input id="pref3" type="checkbox" name="question" value="3" />
+      <label for="pref3">conspiracy</label>
+      <input id="pref4" type="checkbox" name="question" value="4" />
+      <label for="pref4">politics</label>
+      <input id="pref5" type="checkbox" name="question" value="5" />
+      <label for="pref5">riddles</label>
+    </fieldset>
+    <p>Do you have anny trigger topics or phobias? Tell us about it.</p>
+    <textarea id="trigger" rows="5"></textarea>
+    <p>Any question? If you want, leave us a comment.</p>
+    <textarea id="comment" rows="5" placeholder="leave a comment..."></textarea>
+    <button id="submit">submit</button>
+  </div>
 </form>
